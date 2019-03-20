@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/masjid"
+                android:gravity="center">
+
+    <TextView
+            android:layout_margin="16dp"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textAlignment="center"
+            android:text="JADWAL SHOLAT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <EditText
+            android:id="@+id/edt_login_loc"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:textSize="18sp"
+            android:hint="Masukkan Nama Kota"
+            android:maxLines="1"
+            android:ems="1"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="#000"
+            android:gravity="center"
+            android:layout_centerInParent="true" />
+
+    <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/edt_login_loc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary"
+            android:text="submit"
+            android:textStyle="italic|bold" />
+
+</RelativeLayout>
