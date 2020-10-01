@@ -27,8 +27,7 @@ class MainPresenter (private val view: MainView){
 
                 val dataList = response.body()?.items!!.get(0)
                 mainActivity!!.lokasi_value.setText(response.body()!!.query+", "+ response.body()?.items!!.get(0)!!.dateFor);
-//                    lokasi_value?.setText(response.body()?.city + ", " + dataList!!.dateFor)
-                mainActivity!!.fajrvalue?.setText(dataList!!.fajr)
+                mainActivity!!.fajr_value?.setText(dataList!!.fajr)
                 mainActivity!!.shoroq_value?.setText(dataList!!.shurooq)
                 mainActivity!!.dhuhur_value?.setText(dataList!!.dhuhr)
                 mainActivity!!.ashar_value?.setText(dataList!!.asr)

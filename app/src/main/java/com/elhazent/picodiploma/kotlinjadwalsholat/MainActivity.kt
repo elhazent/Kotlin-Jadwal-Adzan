@@ -17,13 +17,16 @@ import retrofit2.Response
 
 
 class MainActivity : AppCompatActivity()  {
+    
+    const val TITLE = "Jadwal Sholat"
+    const val KOTA_KEY = "kota
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        supportActionBar!!.setTitle("Jadwal Sholat")
+        supportActionBar!!.setTitle(TITLE)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-        val kota = intent.getStringExtra("kota")
+        val kota = intent.getStringExtra(KOTA_KEY)
         actionLoad(kota)
         fab.setOnClickListener {
             actionLoad(kota)
